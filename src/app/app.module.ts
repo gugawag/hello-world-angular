@@ -14,6 +14,7 @@ import {MatIcon, MatIconModule} from "@angular/material/icon";
 import {ListagemUsuarioComponent} from "./listagem-usuario/listagem-usuario.component";
 import {CadastroUsuarioComponent} from "./cadastro-usuario/cadastro-usuario.component";
 import {MatMenuModule} from "@angular/material/menu";
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import {MatMenuModule} from "@angular/material/menu";
         MatButtonModule,
         BrowserAnimationsModule,
         MatMenuModule,
-        MatIconModule
+        MatIconModule,
+        FlexLayoutModule
     ],
     providers: [
         provideAnimationsAsync()

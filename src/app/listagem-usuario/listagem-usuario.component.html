@@ -1,5 +1,16 @@
-<ol>
+<div fxLayout="row">
     @for (usuario of usuarios; track $index) {
-        <li>{{ usuario.nome }}</li>
+        <mat-card class="card-usuario" fxFlex="20">
+            <mat-card-header>
+                {{ usuario.nome }}
+            </mat-card-header>
+            <mat-card-content>
+                {{ usuario.nome }} - Idade {{ usuario.idade }} estuda no IFPB e...
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-icon-button (click)="editar(usuario)"><mat-icon>edit</mat-icon></button>
+                <button mat-icon-button (click)="remover(usuario)"><mat-icon>delete</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>
     }
-</ol>
+</div>

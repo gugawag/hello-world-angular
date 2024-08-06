@@ -1,3 +1,4 @@
+<h1>{{acao()}}</h1>
 <mat-card class="card-insercao">
     <mat-card-content>
         <mat-form-field>
@@ -11,7 +12,12 @@
     </mat-card-content>
 </mat-card>
 
-<button mat-icon-button (click)="inserirNome()">
-    <mat-icon>add</mat-icon>
+<button mat-icon-button (click)="manterUsuario()">
+    @if (editando) {
+        <mat-icon>edit</mat-icon>
+    } @else {
+        <mat-icon>add</mat-icon>
+    }
+
 </button>
 

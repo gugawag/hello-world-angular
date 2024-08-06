@@ -13,6 +13,10 @@ const routes: Routes = [
     path: 'cadastro-usuario',
     component: CadastroUsuarioComponent
   },
+  {
+    path: 'edicao-usuario/:id',
+    component: CadastroUsuarioComponent
+  },
 ];
 
 @NgModule({
