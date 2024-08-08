@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {USUARIOS} from "../shared/model/USUARIOS";
-import {Usuario} from "../shared/model/usuario";
+import {USUARIOS} from "../../shared/model/USUARIOS";
+import {Usuario} from "../../shared/model/usuario";
 import {Router} from "@angular/router";
 
 @Component({

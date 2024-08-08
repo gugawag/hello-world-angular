@@ -11,16 +11,16 @@ import {MatInputModule} from "@angular/material/input";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
-import {ListagemUsuarioComponent} from "./listagem-usuario/listagem-usuario.component";
-import {CadastroUsuarioComponent} from "./cadastro-usuario/cadastro-usuario.component";
+import {ListagemUsuarioComponent} from "./usuario/listagem-usuario/listagem-usuario.component";
+import {CadastroUsuarioComponent} from "./usuario/cadastro-usuario/cadastro-usuario.component";
 import {MatMenuModule} from "@angular/material/menu";
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {UsuarioModule} from "./usuario/usuario.module";
+import {SweetAlert2Module} from "@sweetalert2/ngx-sweetalert2";
 
 @NgModule({
     declarations: [
         AppComponent,
-        ListagemUsuarioComponent,
-        CadastroUsuarioComponent
     ],
     imports: [
         BrowserModule,
@@ -33,7 +33,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
         BrowserAnimationsModule,
         MatMenuModule,
         MatIconModule,
-        FlexLayoutModule
+        FlexLayoutModule,
+        UsuarioModule,
+        SweetAlert2Module
     ],
     providers: [
         provideAnimationsAsync()
