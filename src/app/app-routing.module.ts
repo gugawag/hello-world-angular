@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ListagemUsuarioComponent} from "./listagem-usuario/listagem-usuario.component";
+import {ListagemUsuarioComponent} from "./usuario/listagem-usuario/listagem-usuario.component";
 import {AppComponent} from "./app.component";
-import {CadastroUsuarioComponent} from "./cadastro-usuario/cadastro-usuario.component";
+import {ManterUsuarioComponent} from "./usuario/cadastro-usuario/manter-usuario.component";
+import {ListagemUsuariosTabelaComponent} from "./usuario/listagem-usuarios-tabela/listagem-usuarios-tabela.component";
 
 const routes: Routes = [
   {
@@ -10,8 +11,16 @@ const routes: Routes = [
     component: ListagemUsuarioComponent
   },
   {
+    path: 'listagem-usuarios-tabela',
+    component: ListagemUsuariosTabelaComponent
+  },
+  {
     path: 'cadastro-usuario',
-    component: CadastroUsuarioComponent
+    component: ManterUsuarioComponent
+  },
+  {
+    path: 'edicao-usuario/:id',
+    component: ManterUsuarioComponent
   },
 ];
 

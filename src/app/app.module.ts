@@ -11,15 +11,14 @@ import {MatInputModule} from "@angular/material/input";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
-import {ListagemUsuarioComponent} from "./listagem-usuario/listagem-usuario.component";
-import {CadastroUsuarioComponent} from "./cadastro-usuario/cadastro-usuario.component";
+import {ListagemUsuarioComponent} from "./usuario/listagem-usuario/listagem-usuario.component";
+import {ManterUsuarioComponent} from "./usuario/cadastro-usuario/manter-usuario.component";
 import {MatMenuModule} from "@angular/material/menu";
+import {UsuarioModule} from "./usuario/usuario.module";
 
 @NgModule({
     declarations: [
         AppComponent,
-        ListagemUsuarioComponent,
-        CadastroUsuarioComponent
     ],
     imports: [
         BrowserModule,
@@ -31,7 +30,8 @@ import {MatMenuModule} from "@angular/material/menu";
         MatButtonModule,
         BrowserAnimationsModule,
         MatMenuModule,
-        MatIconModule
+        MatIconModule,
+        UsuarioModule
     ],
     providers: [
         provideAnimationsAsync()
